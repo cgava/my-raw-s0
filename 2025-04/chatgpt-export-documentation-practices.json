@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Bonnes pratiques de documentation technique",
+    "create_time": 1712620800,
+    "mapping": {
+      "msg-001": {
+        "id": "msg-001",
+        "message": {
+          "role": "user",
+          "content": {
+            "parts": [
+              "Je suis tech lead dans une equipe de 8 developpeurs. On a un gros probleme de documentation : elle est soit inexistante, soit obsolete. Quelles sont les bonnes pratiques pour maintenir une documentation technique a jour dans une equipe agile ?"
+            ]
+          },
+          "create_time": 1712620800
+        }
+      },
+      "msg-002": {
+        "id": "msg-002",
+        "message": {
+          "role": "assistant",
+          "content": {
+            "parts": [
+              "La documentation technique en equipe agile repose sur trois principes fondamentaux :\n\n1. **Documentation as Code** : Traitez la documentation comme du code source. Stockez-la dans le meme repo git que le code, revoyez-la dans les PRs, et testez-la dans la CI. Cela garantit que la doc evolue avec le code.\n\n2. **Documentation minimale viable** : Ne documentez que ce qui a de la valeur. Les decisions d'architecture (ADRs), les procedures de deploiement, les conventions d'equipe, et les guides d'onboarding sont essentiels. Le code auto-documente (bons noms de variables, types) remplace la doc inline.\n\n3. **Workflow integre** : La documentation ne doit pas etre une tache separee. Integrez-la dans votre definition of done : une feature n'est pas terminee tant que la doc n'est pas mise a jour. Utilisez des templates de PR qui incluent une section 'Documentation impact'.\n\nPour les outils, je recommande une approche a deux niveaux : un wiki pour la connaissance durable (architecture, decisions, conventions) et des fichiers markdown dans le repo pour la doc technique proche du code (README, CONTRIBUTING, ADRs dans un dossier /docs)."
+            ]
+          },
+          "create_time": 1712620860
+        }
+      },
+      "msg-003": {
+        "id": "msg-003",
+        "message": {
+          "role": "user",
+          "content": {
+            "parts": [
+              "Le concept d'ADR m'interesse. Comment on structure un Architecture Decision Record ? Et comment on gere le cas ou une decision est revisee plus tard ?"
+            ]
+          },
+          "create_time": 1712620920
+        }
+      },
+      "msg-004": {
+        "id": "msg-004",
+        "message": {
+          "role": "assistant",
+          "content": {
+            "parts": [
+              "Un ADR (Architecture Decision Record) capture une decision d'architecture dans un format standardise. La structure classique :\n\n```markdown\n# ADR-NNN : Titre de la decision\n\n## Statut\nAccepte | Remplace | Obsolete\n\n## Contexte\nQuel probleme ou besoin a motive cette decision ?\n\n## Decision\nQu'avons-nous decide et pourquoi ?\n\n## Consequences\nQuels sont les effets positifs, negatifs et neutres de cette decision ?\n\n## Alternatives considerees\nQuelles autres options ont ete evaluees et pourquoi ont-elles ete ecartees ?\n```\n\nPour la gestion des revisions : un ADR n'est jamais modifie apres acceptation. Si une decision est revisee, on cree un nouvel ADR qui reference l'ancien avec le statut 'Remplace ADR-NNN'. L'ancien ADR passe au statut 'Remplace par ADR-MMM'. Cela preserve l'historique complet des decisions.\n\nLes ADRs sont idealement stockes dans `/docs/adr/` du repo, numerotes sequentiellement. Outils comme adr-tools ou log4brains peuvent automatiser la gestion. Le plus important c'est la discipline : chaque decision architecturale significative merite un ADR, meme si elle semble evidente aujourd'hui."
+            ]
+          },
+          "create_time": 1712620980
+        }
+      },
+      "msg-005": {
+        "id": "msg-005",
+        "message": {
+          "role": "user",
+          "content": {
+            "parts": [
+              "Derniere question : comment mesurer si notre documentation est efficace ? On m'a demande des KPIs la-dessus et je ne sais pas trop quoi proposer."
+            ]
+          },
+          "create_time": 1712621040
+        }
+      },
+      "msg-006": {
+        "id": "msg-006",
+        "message": {
+          "role": "assistant",
+          "content": {
+            "parts": [
+              "Mesurer l'efficacite de la documentation est delicat mais possible. Voici des metriques pragmatiques :\n\n**Metriques d'usage** :\n- Nombre de consultations par page (si wiki avec analytics)\n- Ratio pages consultees / pages totales (detecte les pages mortes)\n- Temps moyen sur page (engagement reel vs rebond)\n\n**Metriques de fraicheur** :\n- Age moyen des pages (derniere mise a jour)\n- Pourcentage de pages modifiees dans les 90 derniers jours\n- Nombre de pages sans modification depuis 6 mois (dette documentaire)\n\n**Metriques d'impact** :\n- Temps d'onboarding des nouveaux membres (le KPI le plus parlant : si la doc est bonne, l'onboarding accelere)\n- Nombre de questions Slack/Teams auxquelles la reponse est 'c'est dans la doc' (devrait augmenter)\n- Nombre d'incidents lies a une doc manquante ou obsolete (devrait diminuer)\n\n**Metriques de contribution** :\n- Nombre de contributeurs uniques par mois\n- Ratio PRs avec mise a jour doc / PRs totales\n- Couverture : pourcentage de services/composants documentes\n\nMon conseil : commencez par le temps d'onboarding et le pourcentage de pages fraiches. Ce sont les deux metriques les plus faciles a mesurer et les plus parlantes pour le management. Ajoutez les autres progressivement une fois que le workflow est en place."
+            ]
+          },
+          "create_time": 1712621100
+        }
+      }
+    }
+  }
+]
