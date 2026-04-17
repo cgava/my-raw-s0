@@ -71,7 +71,7 @@ Idees et patterns abstraits :
 
 ### Mise a jour (1 page)
 
-- [[synthesis/documentation-as-code|Documentation as Code]] -- Page existante (creee en Phase 2) enrichie avec la perspective equipe : pratiques CI/CD, ADRs, definition of done. Nouvelles sources ajoutees, nouveaux liens vers les pages creees.
+- [[vault/s0/synthesis/documentation-as-code|Documentation as Code]] -- Page existante (creee en Phase 2) enrichie avec la perspective equipe : pratiques CI/CD, ADRs, definition of done. Nouvelles sources ajoutees, nouveaux liens vers les pages creees.
 
 ## 4. Mecanismes cles
 
@@ -117,7 +117,7 @@ Le meme skill `data-ingest` a traite un fichier markdown et un fichier JSON sans
 1. Ouvrir le vault dans Obsidian (`knlg-repo/`)
 2. Activer le **Graph View** (`Ctrl/Cmd + G`)
 3. Observer les 5 nouveaux noeuds : documentation-best-practices, architecture-decision-records, documentation-metrics, knowledge-management-tool-selection, wiki-governance
-4. Remarquer comment ils se connectent aux pages existantes -- liens vers [[entities/obsidian|Obsidian]], [[concepts/personal-knowledge-management|PKM]], [[synthesis/documentation-as-code|Documentation as Code]], [[concepts/zettelkasten|Zettelkasten]]
+4. Remarquer comment ils se connectent aux pages existantes -- liens vers [[entities/obsidian|Obsidian]], [[concepts/personal-knowledge-management|PKM]], [[vault/s0/synthesis/documentation-as-code|Documentation as Code]], [[concepts/zettelkasten|Zettelkasten]]
 
 ### Verifier le croisement des sources
 

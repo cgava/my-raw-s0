@@ -77,8 +77,8 @@ Les skills sont des **savoir-faire, techniques, procedures** :
 
 Les syntheses sont des **analyses transversales** croisant plusieurs concepts et sources :
 
-- [[synthesis/agents-vs-chatbots|Agents vs Chatbots]] — Le tool use comme ligne de demarcation entre generateurs passifs et agents actifs
-- [[synthesis/llm-knowledge-systems|LLM-Powered Knowledge Systems]] — Connexion entre RAG, PKM et agents a skills dans des workflows automatises de connaissances
+- [[vault/s0/synthesis/agents-vs-chatbots|Agents vs Chatbots]] — Le tool use comme ligne de demarcation entre generateurs passifs et agents actifs
+- [[vault/s0/synthesis/llm-knowledge-systems|LLM-Powered Knowledge Systems]] — Connexion entre RAG, PKM et agents a skills dans des workflows automatises de connaissances
 
 ### Le principe de categorisation
 
@@ -131,7 +131,7 @@ Toutes les affirmations d'une page ne se valent pas. L'ingest marque chaque clai
 Exemple dans [[concepts/retrieval-augmented-generation|RAG]] :
 > "Hybrid retrieval combining vector similarity with BM25 lexical search outperforms pure vector search" `^[inferred]`
 
-Le frontmatter porte aussi un bloc `provenance:` avec les proportions (extracted/inferred/ambiguous summing to ~1.0). La page [[synthesis/llm-knowledge-systems|LLM-Powered Knowledge Systems]], qui est une synthese, a logiquement 75% d'inferred.
+Le frontmatter porte aussi un bloc `provenance:` avec les proportions (extracted/inferred/ambiguous summing to ~1.0). La page [[vault/s0/synthesis/llm-knowledge-systems|LLM-Powered Knowledge Systems]], qui est une synthese, a logiquement 75% d'inferred.
 
 ### Delta tracking — `.manifest.json` et hash SHA-256
 

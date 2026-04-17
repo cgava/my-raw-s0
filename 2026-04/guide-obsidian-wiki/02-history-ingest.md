@@ -132,8 +132,8 @@ Savoir-faire et techniques extraits des pratiques observees :
 
 Analyses transversales croisant plusieurs projets et sources :
 
-- [[synthesis/claude-conversation-mining|Claude Conversation Mining]] -- Le meta-processus de minage lui-meme : comment extraire du savoir des conversations
-- [[synthesis/documentation-as-code|Documentation as Code]] -- Pattern recurrent dans se-vault et backup-strategy : traiter la documentation comme du code
+- [[vault/s0/synthesis/claude-conversation-mining|Claude Conversation Mining]] -- Le meta-processus de minage lui-meme : comment extraire du savoir des conversations
+- [[vault/s0/synthesis/documentation-as-code|Documentation as Code]] -- Pattern recurrent dans se-vault et backup-strategy : traiter la documentation comme du code
 
 ### Projet-specifique vs global
 
